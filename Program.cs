@@ -28,18 +28,28 @@ void Task21 ()
 double[] pointA = new double[3];
 double[] pointB = new double[3];
 double average =0;
-Console.WriteLine("Введите число координату x точки A:");
-pointA[0] = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Введите число координату y точки A:");
-pointA[1] = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Введите число координату z точки A:");
-pointA[2] = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Введите число координату x точки B:");
-pointB[0] = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Введите число координату y точки B:");
-pointB[1] = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Введите число координату z точки B:");
-pointB[2] = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("Введите число координату x точки A:");
+//pointA[0] = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("Введите число координату y точки A:");
+//pointA[1] = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("Введите число координату z точки A:");
+//pointA[2] = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("Введите число координату x точки B:");
+//pointB[0] = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("Введите число координату y точки B:");
+//pointB[1] = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("Введите число координату z точки B:");
+//pointB[2] = Convert.ToDouble(Console.ReadLine());
+for (int i=0;i<3;i++)
+    {
+    Console.WriteLine($"Введите число координату {i+1} точки A:");
+    pointA[i] = Convert.ToDouble(Console.ReadLine());
+    }
+for (int i=0;i<3;i++)
+    {
+    Console.WriteLine($"Введите число координату {i+1} точки B:");
+    pointB[i] = Convert.ToDouble(Console.ReadLine());
+    }
 for (int i=0;i<3;i++)
     {
     average = average + Math.Pow((pointA[i]-pointB[i]),2);
