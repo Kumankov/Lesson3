@@ -12,7 +12,7 @@ if (len!=5)
 Console.WriteLine("Введено не пятизначное число");
 else
     {
-        if ((N13.Substring(0,1)==N13.Substring(4,1)) && (N13.Substring(1,1)==N13.Substring(3,1)))
+        if ((N13[0]==N13[4]) && (N13[1]==N13[3]))
         Console.WriteLine($"Число {N13} палиндром");
         else
         Console.WriteLine($"Число {N13} не палиндром");
