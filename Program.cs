@@ -54,13 +54,14 @@ void Task23 ()
 {
 Console.WriteLine("Введите число N для задачи 23:");
 int N = int.Parse(Console.ReadLine());
-Console.Write("Кубы чисел до N - ");
+Console.WriteLine("Кубы чисел до N");
 for (int i=1;i<=N;i++)
     {
     if (i==N)
     Console.Write(Math.Pow(i,3));
     else
     Console.Write($"{Math.Pow(i,3)}, ");
+    //Console.WriteLine($"{i} в степени 3 = {Math.Pow(i,3)}");
     }
 }
 
