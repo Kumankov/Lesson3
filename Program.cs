@@ -61,6 +61,7 @@ for (int i=1;i<=N;i++)
     Console.Write(Math.Pow(i,3));
     else
     Console.Write($"{Math.Pow(i,3)}, ");
+    //вывод в столбец с комментариями
     //Console.WriteLine($"{i} в степени 3 = {Math.Pow(i,3)}");
     }
 }
