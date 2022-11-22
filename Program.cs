@@ -45,7 +45,7 @@ for (int i=0;i<3;i++)
     average = average + Math.Pow((pointA[i]-pointB[i]),2);
     }
 average = Math.Sqrt(average);
-Console.Write($"Расстояние между точками {average}");
+Console.WriteLine($"Расстояние между точками {average}");
 }
 
 //Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
