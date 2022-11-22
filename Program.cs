@@ -6,16 +6,16 @@ Task19();
 void Task19 ()
 {
 Console.WriteLine("Введите пятизначное число для задачи 19:");
-string N13 = Console.ReadLine();
-int len = N13.Length;
+string N19 = Console.ReadLine();
+int len = N19.Length;
 if (len!=5)
 Console.WriteLine("Введено не пятизначное число");
 else
     {
-        if ((N13[0]==N13[4]) && (N13[1]==N13[3]))
-        Console.WriteLine($"Число {N13} палиндром");
+        if ((N19[0]==N19[4]) && (N19[1]==N19[3]))
+        Console.WriteLine($"Число {N19} палиндром");
         else
-        Console.WriteLine($"Число {N13} не палиндром");
+        Console.WriteLine($"Число {N19} не палиндром");
     }
 }
 
