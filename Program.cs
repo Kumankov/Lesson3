@@ -58,7 +58,7 @@ Console.WriteLine("Кубы чисел до N");
 for (int i=1;i<=N;i++)
     {
     if (i==N)
-    Console.Write(Math.Pow(i,3));
+    Console.Write(Math.Pow(i,3)); //не пишем запятую после последнего числа
     else
     Console.Write($"{Math.Pow(i,3)}, ");
     //вывод в столбец с комментариями
