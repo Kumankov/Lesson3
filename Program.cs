@@ -9,7 +9,7 @@ Console.WriteLine("Введите пятизначное число для за�
 string N13 = Console.ReadLine();
 int len = N13.Length;
 if (len!=5)
-Console.WriteLine("введено не пятизначное число");
+Console.WriteLine("Введено не пятизначное число");
 else
     {
         if ((N13.Substring(0,1)==N13.Substring(4,1)) && (N13.Substring(1,1)==N13.Substring(3,1)))
@@ -30,12 +30,12 @@ double[] pointB = new double[3];
 double average =0;
 for (int i=0;i<3;i++)
     {
-    Console.WriteLine($"Введите число координату {i+1} точки A:");
+    Console.WriteLine($"Введите координату {i+1} точки A:");
     pointA[i] = Convert.ToDouble(Console.ReadLine());
     }
 for (int i=0;i<3;i++)
     {
-    Console.WriteLine($"Введите число координату {i+1} точки B:");
+    Console.WriteLine($"Введите координату {i+1} точки B:");
     pointB[i] = Convert.ToDouble(Console.ReadLine());
     }
 for (int i=0;i<3;i++)
@@ -43,7 +43,7 @@ for (int i=0;i<3;i++)
     average = average + Math.Pow((pointA[i]-pointB[i]),2);
     }
 average = Math.Sqrt(average);
-Console.WriteLine($"Расстояние между точками {average}");
+Console.WriteLine($"Расстояние между точками A и B = {average}");
 }
 
 //Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
@@ -59,7 +59,7 @@ for (int i=1;i<=N;i++)
     if (i==N)
     Console.Write(Math.Pow(i,3));
     else
-    Console.Write($"{Math.Pow(i,3)}, ");
+    Console.Write($"Кубы чисел до N {Math.Pow(i,3)}, ");
     }
 }
 
